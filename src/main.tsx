@@ -1,8 +1,8 @@
 import { createRouter, RouterProvider } from "@tanstack/react-router";
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-
 import { routeTree } from "./routeTree.gen";
+import GlobalStyle from "./styles/GlobalStyle";
 
 const router = createRouter({ routeTree });
 
@@ -17,6 +17,7 @@ if (!rootElement.innerHTML) {
 	const root = ReactDOM.createRoot(rootElement);
 	root.render(
 		<StrictMode>
+			<GlobalStyle />
 			<RouterProvider router={router} />
 		</StrictMode>,
 	);

@@ -40,6 +40,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:19.1.6"],\
           ["@vitejs/plugin-react", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:4.7.0"],\
           ["ai-finder", "workspace:."],\
+          ["emotion-reset", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:3.0.1"],\
           ["eslint", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:9.32.0"],\
           ["eslint-plugin-react-hooks", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:5.2.0"],\
           ["eslint-plugin-react-refresh", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:0.4.20"],\
@@ -2244,6 +2245,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:19.1.6"],\
           ["@vitejs/plugin-react", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:4.7.0"],\
           ["ai-finder", "workspace:."],\
+          ["emotion-reset", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:3.0.1"],\
           ["eslint", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:9.32.0"],\
           ["eslint-plugin-react-hooks", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:5.2.0"],\
           ["eslint-plugin-react-refresh", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:0.4.20"],\
@@ -2672,6 +2674,28 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/emoji-regex-npm-9.2.2-e6fac8d058-10c0.zip/node_modules/emoji-regex/",\
         "packageDependencies": [\
           ["emoji-regex", "npm:9.2.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["emotion-reset", [\
+      ["npm:3.0.1", {\
+        "packageLocation": "../../.yarn/berry/cache/emotion-reset-npm-3.0.1-061e1e27b7-10c0.zip/node_modules/emotion-reset/",\
+        "packageDependencies": [\
+          ["emotion-reset", "npm:3.0.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:3.0.1", {\
+        "packageLocation": "./.yarn/__virtual__/emotion-reset-virtual-5c9dcaf3df/3/.yarn/berry/cache/emotion-reset-npm-3.0.1-061e1e27b7-10c0.zip/node_modules/emotion-reset/",\
+        "packageDependencies": [\
+          ["@emotion/react", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:11.14.0"],\
+          ["@types/emotion__react", null],\
+          ["emotion-reset", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:3.0.1"]\
+        ],\
+        "packagePeers": [\
+          "@emotion/react",\
+          "@types/emotion__react"\
         ],\
         "linkType": "HARD"\
       }]\
