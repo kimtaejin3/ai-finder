@@ -29,6 +29,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@biomejs/biome", "npm:2.1.2"],\
+          ["@emotion/babel-plugin", "npm:11.13.5"],\
           ["@emotion/react", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:11.14.0"],\
           ["@emotion/styled", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:11.14.1"],\
           ["@eslint/js", "npm:9.32.0"],\
@@ -2234,6 +2235,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@biomejs/biome", "npm:2.1.2"],\
+          ["@emotion/babel-plugin", "npm:11.13.5"],\
           ["@emotion/react", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:11.14.0"],\
           ["@emotion/styled", "virtual:58603faaa23bbb810e9d3fe1b74d118de75976feda5c71347f8bd376abe65aca6adc6f68971b7a6d5f88baff43cbb97a2133d0d76e72facbb732f659d0761724#npm:11.14.1"],\
           ["@eslint/js", "npm:9.32.0"],\

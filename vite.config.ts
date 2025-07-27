@@ -8,6 +8,11 @@ export default defineConfig({
 			target: "react",
 			autoCodeSplitting: true,
 		}),
-		react(),
+		react({
+			jsxImportSource: '@emotion/react',
+			babel: {
+				plugins: ['@emotion/babel-plugin']
+			}
+		}),
 	],
 });

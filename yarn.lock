@@ -1598,6 +1598,7 @@ __metadata:
   resolution: "ai-finder@workspace:."
   dependencies:
     "@biomejs/biome": "npm:2.1.2"
+    "@emotion/babel-plugin": "npm:^11.13.5"
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.30.1"
