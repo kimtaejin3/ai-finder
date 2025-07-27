@@ -22,7 +22,7 @@ function Index() {
 
 				{/* Category Filter Section */}
 				<section css={styles.section}>
-					<h2 css={styles.sectionTitle}>목적별로 AI 도구 찾아보기</h2>
+					<h2 css={styles.sectionTitle}>목적별 AI 도구 찾기</h2>
 					<div css={styles.grid}>
 						{[
 							"PPT 만들기",
@@ -33,6 +33,7 @@ function Index() {
 							"음성 변조",
 							"코드 보조",
 							"마케팅 카피",
+							"코딩",
 						].map((label) => (
 							<button key={label} css={styles.tagButton}>
 								{label}
@@ -100,12 +101,10 @@ const styles = {
 	  color: #6b7280;
 	`,
 	primaryButton: css`
-	  background-color: #000000;
+	  background-color: #2563EB;
 	  color: #ffffff;
 	  padding: 0.75rem 1.5rem;
 	  border-radius: 1rem;
-	  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-	  transition: background-color 0.3s;
 	  &:hover {
 		background-color: #1f1f1f;
 	  }
