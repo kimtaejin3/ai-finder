@@ -5,7 +5,7 @@ export default function Container({ children }: { children: React.ReactNode }) {
 }
 
 const Wrapper = styled.div`
-    width: 900px;
+    max-width: 750px;
     margin: 0 auto;
     padding: 0 20px;
 `;

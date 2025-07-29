@@ -7,6 +7,10 @@ export default function GlobalStyle() {
 			styles={css`
             ${emotionReset}
 
+            button {
+                all: unset;
+            }
+
             *, *::after, *::before {
                 box-sizing: border-box;
                 -moz-osx-font-smoothing: grayscale;
