@@ -6,7 +6,7 @@ export default function Header() {
 	return (
 		<header css={styles.container}>
 			<h1 css={styles.logo}>
-				<Link to="/">MILK</Link>
+				<Link to="/">Kitchen house</Link>
 			</h1>
 			<form css={styles.searchForm}>
 				<input type="text" placeholder="" />

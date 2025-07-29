@@ -2,6 +2,10 @@ import { css } from "@emotion/react";
 import { createFileRoute } from "@tanstack/react-router";
 import { HiHeart, HiOutlineHeart } from "react-icons/hi";
 import { useState } from "react";
+import productCover from "../assets/covers/product-cover.webp";
+import productCover2 from "../assets/covers/product-cover2.jpeg"
+import productCover3 from "../assets/covers/product-cover3.jpeg"
+import productCover4 from "../assets/covers/product-cover4.jpeg"
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -24,14 +28,14 @@ const mockProducts: Product[] = [
     brand: "cranberry",
     name: "레이스 플라워 티셔츠",
     price: 19700,
-    imageUrl: "https://via.placeholder.com/300x400?text=Product+1"
+    imageUrl: productCover4
   },
   {
     id: 2,
     brand: "cranberry",
     name: "러브미 글리터 반팔티",
     price: 17900,
-    imageUrl: "https://via.placeholder.com/300x400?text=Product+2",
+    imageUrl: productCover3,
     isRecommended: true
   },
   {
@@ -39,7 +43,7 @@ const mockProducts: Product[] = [
     brand: "cranberry",
     name: "유니크 레터링 반팔",
     price: 14800,
-    imageUrl: "https://via.placeholder.com/300x400?text=Product+3"
+    imageUrl: productCover2
   }
 ];
 
@@ -113,11 +117,10 @@ const styles = {
   `,
   productGrid: css`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.5rem;
   `,
   productCard: css`
-    border-radius: 12px;
     overflow: hidden;
     transition: transform 0.2s;
     
@@ -130,6 +133,8 @@ const styles = {
     width: 100%;
     padding-bottom: 130%; /* 4:3 비율 */
     overflow: hidden;
+    border-radius: 12px;
+
   `,
   productImage: css`
     position: absolute;
