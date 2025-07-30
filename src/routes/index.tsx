@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import { createFileRoute } from "@tanstack/react-router";
 import { HiHeart, HiOutlineHeart } from "react-icons/hi";
 import { useState } from "react";
-import productCover from "../assets/covers/product-cover.webp";
+import banner from "../assets/covers/banner.jpg"
 import productCover2 from "../assets/covers/product-cover2.jpeg"
 import productCover3 from "../assets/covers/product-cover3.jpeg"
 import productCover4 from "../assets/covers/product-cover4.jpeg"
@@ -80,7 +80,45 @@ function Index() {
   return (
     <div css={styles.container}>
       <div css={styles.banner}>
-        ...
+        <img src={banner} alt="Kitchen house banner" css={styles.bannerImage} />
+      </div>
+
+      <div css={styles.categorySection}>
+        <h2 css={styles.sectionTitle}>카테고리</h2>
+        <div css={styles.categoryGrid}>
+          <div css={styles.categoryItem}>
+            <div css={styles.categoryIcon}>🔌</div>
+            <div css={styles.categoryName}>가전</div>
+          </div>
+          <div css={styles.categoryItem}>
+            <div css={styles.categoryIcon}>🍳</div>
+            <div css={styles.categoryName}>주방기구</div>
+          </div>
+          <div css={styles.categoryItem}>
+            <div css={styles.categoryIcon}>🛋️</div>
+            <div css={styles.categoryName}>가구</div>
+          </div>
+          <div css={styles.categoryItem}>
+            <div css={styles.categoryIcon}>👕</div>
+            <div css={styles.categoryName}>의류</div>
+          </div>
+          <div css={styles.categoryItem}>
+            <div css={styles.categoryIcon}>📱</div>
+            <div css={styles.categoryName}>디지털</div>
+          </div>
+          <div css={styles.categoryItem}>
+            <div css={styles.categoryIcon}>🧴</div>
+            <div css={styles.categoryName}>뷰티</div>
+          </div>
+          <div css={styles.categoryItem}>
+            <div css={styles.categoryIcon}>🧸</div>
+            <div css={styles.categoryName}>유아</div>
+          </div>
+          <div css={styles.categoryItem}>
+            <div css={styles.categoryIcon}>🏠</div>
+            <div css={styles.categoryName}>홈데코</div>
+          </div>
+        </div>
       </div>
 
       <div css={styles.recommendationSection}>
@@ -98,26 +136,31 @@ function Index() {
 
 const styles = {
   container: css`
-    padding: 0 1rem;
   `,
   banner: css`
     width: 100%;
-    height: 400px;
-    background: rgb(131, 160, 220);
+    height: 200px;
     border-radius: 20px;
     margin-bottom: 2rem;
+    overflow: hidden;
+  `,
+  bannerImage: css`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
   `,
   recommendationSection: css`
     margin: 2rem 0;
   `,
   sectionTitle: css`
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
   `,
   productGrid: css`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 1.5rem;
   `,
   productCard: css`
@@ -187,6 +230,46 @@ const styles = {
   price: css`
     font-weight: 600;
     font-size: 1.1rem;
+  `,
+  categorySection: css`
+    margin: 2rem 0;
+  `,
+  categoryGrid: css`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  `,
+  categoryItem: css`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background-color: #f3f4f6;
+      transform: translateY(-4px);
+    }
+  `,
+  categoryIcon: css`
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  `,
+  categoryName: css`
+    font-size: 0.9rem;
+    font-weight: 500;
   `,
   footer: css`
     border-top: 1px solid #e5e7eb;
