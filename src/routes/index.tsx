@@ -129,6 +129,15 @@ function Index() {
           ))}
         </div>
       </div>
+
+      <div css={styles.recommendationSection}>
+        <h2 css={styles.sectionTitle}>올해 여름은 시원하게⛱️</h2>
+        <div css={styles.productGrid}>
+          {mockProducts.map(product => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      </div>
       <footer css={styles.footer}>© 2025 taeya shopping mall</footer>
     </div>
   );
